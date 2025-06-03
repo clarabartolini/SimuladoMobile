@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "37721437653",
+    "project_id": "estacionamento-jbs-8085a",
+    "storage_bucket": "estacionamento-jbs-8085a.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:37721437653:android:b959df1bf3f5d93e1eb95c",
+        "android_client_info": {
+          "package_name": "com.aula.estacionamentojbs"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC6BbUOVFq4Ilwsozzt3WFGyGs4zD1pUrI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
