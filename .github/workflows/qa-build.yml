@@ -1,0 +1,37 @@
+name: Android QA Build
+
+on:
+  pull_request:
+    types: [labeled]
+
+jobs:
+  build-qa:
+    if: github.event.label.name == 'qa-build'
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup JDK
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+
+      - name: Cache Gradle
+        uses: actions/cache@v3
+        with:
+          path: |
+            ~/.gradle/caches
+            ~/.gradle/wrapper
+          key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle*', '**/gradle-wrapper.properties') }}
+
+      - name: Build APK QA
+        run: ./gradlew assembleQaRelease
+
+      - name: Upload APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: app-qa-release
+          path: app/build/outputs/apk/qa/release/app-qa-release.apk
