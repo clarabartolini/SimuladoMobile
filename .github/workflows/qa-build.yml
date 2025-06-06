@@ -28,7 +28,9 @@ jobs:
           key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle*', '**/gradle-wrapper.properties') }}
 
       - name: Build APK QA
-        run: ./gradlew assembleQaRelease
+        run: |
+          chmod +x ./gradlew
+          ./gradlew assembleQaRelease
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
