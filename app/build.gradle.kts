@@ -7,6 +7,19 @@ android {
     namespace = "com.aula.estacionamentojbs"
     compileSdk = 35
 
+    flavorDimensions += "default"
+
+    productFlavors {
+        create("qa") {
+            dimension = "default"
+            applicationIdSuffix = ".qa"
+            versionNameSuffix = "-qa"
+        }
+        create("production") {
+            dimension = "default"
+        }
+    }
+
     defaultConfig {
         applicationId = "com.aula.estacionamentojbs"
         minSdk = 33
