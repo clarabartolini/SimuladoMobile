@@ -1,0 +1,16 @@
+name: Check QA OK
+
+on:
+  workflow_run:
+    workflows: ["Android QA Build"]
+    types:
+      - completed
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+
+    steps:
+      - name: Mark QA Check Passed
+        run: echo "QA passed ✔️"
