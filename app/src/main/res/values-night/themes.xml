@@ -1,16 +1,19 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
+    <!-- Tema noturno -->
     <style name="Theme.EstacionamentoJBS" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
-        <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/purple_200</item>
-        <item name="colorPrimaryVariant">@color/purple_700</item>
-        <item name="colorOnPrimary">@color/black</item>
-        <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/teal_200</item>
-        <item name="colorSecondaryVariant">@color/teal_200</item>
-        <item name="colorOnSecondary">@color/black</item>
-        <!-- Status bar color. -->
+        <!-- Primary brand color -->
+        <item name="colorPrimary">#1630BF</item>
+        <item name="colorPrimaryVariant">#121D6A</item>
+        <item name="colorOnPrimary">#000000</item>
+
+        <!-- Secondary brand color -->
+        <item name="colorSecondary">#2196F3</item>
+        <item name="colorSecondaryVariant">#1769AA</item>
+        <item name="colorOnSecondary">#000000</item>
+
+        <!-- Status bar color -->
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
-        <!-- Customize your theme here. -->
     </style>
+
+    <style name="Theme.EstacionamentoJBS.NoActionBar" parent="Theme.MaterialComponents.DayNight.NoActionBar" />
 </resources>
