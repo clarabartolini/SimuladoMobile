@@ -5,22 +5,22 @@
       <config />
     </shared>
     <layouts>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml">
+        <config>
+          <theme>@style/Theme.EstacionamentoJBS</theme>
+        </config>
+      </layout>
       <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+        <config>
+          <theme>@style/Theme.AtividadeNisflei</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/dialog_adicionar.xml">
         <config>
           <theme>@style/Theme.EstacionamentoJBS</theme>
         </config>
       </layout>
       <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_home.xml">
-        <config>
-          <theme>@style/Theme.EstacionamentoJBS</theme>
-        </config>
-      </layout>
-      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_login.xml">
-        <config>
-          <theme>@style/Theme.EstacionamentoJBS</theme>
-        </config>
-      </layout>
-      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_splash.xml">
         <config>
           <theme>@style/Theme.EstacionamentoJBS</theme>
         </config>
@@ -47,31 +47,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a96ade05-b8b6-45fc-8488-9ac7a8e71596" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/aula/estacionamentojbs/ui/login/Login.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/aula/estacionamentojbs/ui/login/Login_Admin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_login.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_login__admin.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aula/estacionamentojbs/AdapterCarros.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/aula/estacionamentojbs/adapter/AdapterCarro.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aula/estacionamentojbs/Cards.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/aula/estacionamentojbs/ui/home/Carro_CardView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aula/estacionamentojbs/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/aula/estacionamentojbs/data/Database.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aula/estacionamentojbs/Estacionamento.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/aula/estacionamentojbs/model/Carro.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aula/estacionamentojbs/Splash.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/aula/estacionamentojbs/ui/splash/Splash.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aula/estacionamentojbs/ui/dashboard/DashboardFragment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aula/estacionamentojbs/ui/dashboard/DashboardViewModel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aula/estacionamentojbs/ui/desktop.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aula/estacionamentojbs/ui/home/HomeFragment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aula/estacionamentojbs/ui/home/HomeViewModel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aula/estacionamentojbs/ui/notifications/NotificationsFragment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aula/estacionamentojbs/ui/notifications/NotificationsViewModel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_cards.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_dashboard.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_home.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_home.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_notifications.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/placas.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_carro.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/navigation/mobile_navigation.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/navigation/mobile_navigation.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +58,7 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[DeviceId(pluginId=LocalEmulator, isTemplate=false, identifier=path=C:\Users\yasminrodrigues-ieg\.android\avd\Medium_Phone.avd)]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[DeviceId(pluginId=LocalEmulator, isTemplate=false, identifier=path=C:\Users\claramoreira-ieg\.android\avd\Pixel_9_Pro_API_35.avd)]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -136,6 +113,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Android App.app.executor": "Run",
     "Gradle.SimuladoMobile.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.cidr.known.project.marker": "true",
@@ -143,9 +121,9 @@
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
     "com.codeium.enabled": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "projeto__alterado",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/yasminrodrigues-ieg/AndroidStudioProjects/SimuladoMobile"
+    "last_opened_file_path": "C:/Users/claramoreira-ieg/AndroidStudioProjects/SimuladoMobile2"
   }
 }]]></component>
   <component name="RecentsManager">
