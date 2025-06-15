@@ -13,6 +13,7 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.DialogFragment;
 
 import com.aula.estacionamentojbs.R;
+import com.aula.estacionamentojbs.data.Database;
 import com.aula.estacionamentojbs.model.Carro;
 
 import java.text.SimpleDateFormat;
@@ -64,10 +65,13 @@ public class AdicionarDialog extends DialogFragment {
                 return;
             }
 
+
             SimpleDateFormat sdf = new SimpleDateFormat("HH:mm:ss");
             String horaEntradaFormatada = sdf.format(new Date());
 
+            Database database = new Database();
             Carro novoCarro = new Carro(proprietario, placaStr, veiculoStr, corStr, horaEntradaFormatada, "");
+            database.adicionar(novoCarro, getContext());
 
             if (listener != null) {
                 listener.onCarroAdicionado(novoCarro);

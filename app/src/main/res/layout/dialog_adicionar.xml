@@ -1,83 +1,98 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:padding="24dp"
-    android:background="@android:color/white">
+    android:layout_height="match_parent"
+    android:background="#F0F0F0">
 
-    <LinearLayout
+    <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Adicionar Veículo"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:gravity="center"
-            android:layout_marginBottom="24dp" />
-
-        <EditText
-            android:id="@+id/placa"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Placa"
-            android:inputType="text"
-            android:maxLines="1"
-            android:layout_marginBottom="16dp"
-            android:background="@android:drawable/edit_text" />
-
-        <EditText
-            android:id="@+id/cor"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Cor"
-            android:inputType="text"
-            android:maxLines="1"
-            android:layout_marginBottom="16dp"
-            android:background="@android:drawable/edit_text" />
-
-        <EditText
-            android:id="@+id/veiculo"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Veículo"
-            android:inputType="text"
-            android:maxLines="1"
-            android:layout_marginBottom="24dp"
-            android:background="@android:drawable/edit_text" />
+        app:cardBackgroundColor="@color/colorPrimary"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.4">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:weightSum="2"
-            android:gravity="center">
+            android:orientation="vertical"
+            android:padding="24dp">
 
-            <Button
-                android:id="@+id/btnCancelar"
-                android:layout_width="wrap_content"
+            <TextView
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="8dp"
-                android:layout_weight="1"
-                android:backgroundTint="#F44336"
-                android:text="Cancelar"
-                android:textAllCaps="false"
-                android:textColor="@android:color/white" />
+                android:layout_marginBottom="24dp"
+                android:gravity="center"
+                android:text="Adicionar Veículo"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
-            <Button
-                android:id="@+id/btnAdicionar"
-                android:layout_width="wrap_content"
+            <EditText
+                android:id="@+id/placa"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:layout_weight="1"
-                android:backgroundTint="#4CAF50"
-                android:text="Adicionar"
-                android:textAllCaps="false"
-                android:textColor="@android:color/white" />
+                android:layout_marginBottom="16dp"
+                android:background="@android:color/white"
+                android:hint="Placa"
+                android:inputType="textCapCharacters"
+                android:maxLines="1" />
 
+            <EditText
+                android:id="@+id/cor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="@android:color/white"
+                android:hint="Cor"
+                android:inputType="text"
+                android:maxLines="1" />
+
+            <EditText
+                android:id="@+id/veiculo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:background="@android:color/white"
+                android:hint="Veículo"
+                android:inputType="text"
+                android:maxLines="1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnCancelar"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#F44336"
+                    android:text="Cancelar"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white" />
+
+                <Button
+                    android:id="@+id/btnAdicionar"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#4CAF50"
+                    android:text="Adicionar"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white" />
+
+            </LinearLayout>
         </LinearLayout>
-    </LinearLayout>
-</ScrollView>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

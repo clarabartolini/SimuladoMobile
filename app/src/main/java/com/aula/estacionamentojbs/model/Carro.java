@@ -31,7 +31,7 @@ public class Carro {
         return placa;
     }
 
-    public void setPlaca(String placa) {
+    public void setPlaca() {
         this.placa = placa;
     }
 

@@ -15,12 +15,27 @@
           <theme>@style/Theme.AtividadeNisflei</theme>
         </config>
       </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_splash_screen.xml">
+        <config>
+          <theme>@style/Theme.EstacionamentoJBS</theme>
+        </config>
+      </layout>
       <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/dialog_adicionar.xml">
         <config>
           <theme>@style/Theme.EstacionamentoJBS</theme>
         </config>
       </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/dialog_excluir.xml">
+        <config>
+          <theme>@style/Theme.EstacionamentoJBS</theme>
+        </config>
+      </layout>
       <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_home.xml">
+        <config>
+          <theme>@style/Theme.EstacionamentoJBS</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_perfil.xml">
         <config>
           <theme>@style/Theme.EstacionamentoJBS</theme>
         </config>
@@ -47,7 +62,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a96ade05-b8b6-45fc-8488-9ac7a8e71596" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aula/estacionamentojbs/data/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/aula/estacionamentojbs/data/Database.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aula/estacionamentojbs/model/Carro.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/aula/estacionamentojbs/model/Carro.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aula/estacionamentojbs/ui/dialog/AdicionarDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/aula/estacionamentojbs/ui/dialog/AdicionarDialog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aula/estacionamentojbs/ui/dialog/ExcluirDialog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aula/estacionamentojbs/ui/home/Carro_CardView.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/aula/estacionamentojbs/ui/home/Carro_CardView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/dialog_adicionar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/dialog_adicionar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/dialog_excluir.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/dialog_excluir.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_home.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_home.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -75,7 +99,12 @@
         </task>
         <projects_view>
           <tree_state>
-            <expand />
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Estacionamento JBS" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
             <select />
           </tree_state>
         </projects_view>
@@ -98,7 +127,7 @@
     </scriptDefinition>
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
+    <option name="selectedTabId" value="_Designer_Tab" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
@@ -111,21 +140,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Android App.app.executor": "Run",
-    "Gradle.SimuladoMobile.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "RunOnceActivity.readMode.enableVisualFormatting": "true",
-    "cf.first.check.clang-format": "false",
-    "cidr.known.project.marker": "true",
-    "com.codeium.enabled": "true",
-    "git-widget-placeholder": "projeto__alterado",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/claramoreira-ieg/AndroidStudioProjects/SimuladoMobile2"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Android App.app.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SimuladoMobile.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;com.codeium.enabled&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;projeto__alterado&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/claramoreira-ieg/AndroidStudioProjects/SimuladoMobile2&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\claramoreira-ieg\AndroidStudioProjects\SimuladoMobile2\app\src\main\res\layout" />
@@ -264,22 +293,22 @@
         </entry>
         <entry key="com.aula.estacionamentojbs">
           <value>
-            <CheckInfo lastCheckTimestamp="1749465726636" />
+            <CheckInfo lastCheckTimestamp="1750022326580" />
           </value>
         </entry>
         <entry key="com.aula.estacionamentojbs.qa">
           <value>
-            <CheckInfo lastCheckTimestamp="1749465726635" />
+            <CheckInfo lastCheckTimestamp="1750022326578" />
           </value>
         </entry>
         <entry key="com.aula.estacionamentojbs.qa.test">
           <value>
-            <CheckInfo lastCheckTimestamp="1749465726651" />
+            <CheckInfo lastCheckTimestamp="1750022326579" />
           </value>
         </entry>
         <entry key="com.aula.estacionamentojbs.test">
           <value>
-            <CheckInfo lastCheckTimestamp="1749465726631" />
+            <CheckInfo lastCheckTimestamp="1750022326582" />
           </value>
         </entry>
       </map>

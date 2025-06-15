@@ -1,6 +1,8 @@
 package com.aula.estacionamentojbs.ui.home;
 
 import android.app.AlertDialog;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -16,6 +18,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 
 import com.aula.estacionamentojbs.R;
 import com.aula.estacionamentojbs.adapter.AdapterCarro;
+import com.aula.estacionamentojbs.data.Database;
 import com.aula.estacionamentojbs.databinding.FragmentHomeBinding;
 import com.aula.estacionamentojbs.model.Carro;
 import com.aula.estacionamentojbs.ui.dialog.AdicionarDialog;
@@ -83,9 +86,11 @@ public class Carro_CardView extends Fragment {
 
         // Dados de exemplo
         carros.clear();
-        carros.add(new Carro("João", "ABC-1234", "Fiat Uno", "Vermelho", "08:00", ""));
-        carros.add(new Carro("Maria", "XYZ-5678", "Ford Ka", "Preto", "09:15", ""));
-        carros.add(new Carro("Sara", "GIJ-2345", "Gol Bolinha", "Azul Escuro", "15:12", ""));
+//        carros.add(new Carro("João", "ABC-1234", "Fiat Uno", "Vermelho", "08:00", ""));
+//        carros.add(new Carro("Maria", "XYZ-5678", "Ford Ka", "Preto", "09:15", ""));
+//        carros.add(new Carro("Sara", "GIJ-2345", "Gol Bolinha", "Azul Escuro", "15:12", ""));
+        Database database = new Database();
+        database.listar(carros, adapterCarros, getContext());
         adapterCarros.notifyDataSetChanged();
     }
 
@@ -107,6 +112,7 @@ public class Carro_CardView extends Fragment {
         builder.setView(dialogView);
 
         AlertDialog dialog = builder.create();
+        dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
 
         TextView mensagemExcluir = dialogView.findViewById(R.id.mensagemExcluir);
         Button btnExcluir = dialogView.findViewById(R.id.btnExcluir);
@@ -115,6 +121,8 @@ public class Carro_CardView extends Fragment {
         mensagemExcluir.setText("Tem certeza que deseja excluir o registro do veículo " + carro.getPlaca() + "?");
 
         btnExcluir.setOnClickListener(v -> {
+            Database database = new Database();
+            database.excluir(carro, getContext());
             carros.remove(carro);
             adapterCarros.notifyDataSetChanged();
             dialog.dismiss();
