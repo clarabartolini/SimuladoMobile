@@ -2,20 +2,19 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#F0F0F0">
+    android:layout_height="match_parent">
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:cardBackgroundColor="@color/colorPrimary"
-        app:cardCornerRadius="5dp"
-        app:cardElevation="8dp"
+        android:layout_margin="24dp"
+        app:cardBackgroundColor="@android:color/white"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.4">
+        app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -23,46 +22,51 @@
             android:orientation="vertical"
             android:padding="24dp">
 
+            <!-- Título -->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="24dp"
                 android:gravity="center"
                 android:text="Adicionar Veículo"
-                android:textColor="@android:color/white"
-                android:textSize="20sp"
+                android:textColor="#212121"
+                android:textSize="22sp"
                 android:textStyle="bold" />
 
+            <!-- Campo Placa -->
             <EditText
                 android:id="@+id/placa"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
-                android:background="@android:color/white"
+                android:background="@drawable/bg_edittext"
                 android:hint="Placa"
                 android:inputType="textCapCharacters"
-                android:maxLines="1" />
+                android:padding="12dp" />
 
+            <!-- Campo Cor -->
             <EditText
                 android:id="@+id/cor"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
-                android:background="@android:color/white"
+                android:background="@drawable/bg_edittext"
                 android:hint="Cor"
                 android:inputType="text"
-                android:maxLines="1" />
+                android:padding="12dp" />
 
+            <!-- Campo Veículo -->
             <EditText
                 android:id="@+id/veiculo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="24dp"
-                android:background="@android:color/white"
-                android:hint="Veículo"
+                android:background="@drawable/bg_edittext"
+                android:hint="Modelo do Veículo"
                 android:inputType="text"
-                android:maxLines="1" />
+                android:padding="12dp" />
 
+            <!-- Botões -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -75,7 +79,9 @@
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="8dp"
                     android:layout_weight="1"
-                    android:backgroundTint="#F44336"
+                    android:background="@drawable/bg_button_red"
+                    android:backgroundTint="#E57373"
+                    android:padding="12dp"
                     android:text="Cancelar"
                     android:textAllCaps="false"
                     android:textColor="@android:color/white" />
@@ -86,7 +92,9 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
                     android:layout_weight="1"
+                    android:background="@drawable/bg_button_green"
                     android:backgroundTint="#4CAF50"
+                    android:padding="12dp"
                     android:text="Adicionar"
                     android:textAllCaps="false"
                     android:textColor="@android:color/white" />

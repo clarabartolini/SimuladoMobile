@@ -95,11 +95,7 @@ public class Carro_CardView extends Fragment {
 
         binding.fabAddCar.setOnClickListener(v -> abrirDialogAdicionar());
 
-        // Dados de exemplo
         carros.clear();
-//        carros.add(new Carro("João", "ABC-1234", "Fiat Uno", "Vermelho", "08:00", ""));
-//        carros.add(new Carro("Maria", "XYZ-5678", "Ford Ka", "Preto", "09:15", ""));
-//        carros.add(new Carro("Sara", "GIJ-2345", "Gol Bolinha", "Azul Escuro", "15:12", ""));
         Database database = new Database();
         database.listar(carros, adapterCarros, getContext());
         adapterCarros.notifyDataSetChanged();
