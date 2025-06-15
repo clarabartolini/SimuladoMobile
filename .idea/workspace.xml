@@ -21,12 +21,15 @@
         </config>
       </layout>
       <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/dialog_adicionar.xml">
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_cards.xml">
         <config>
           <theme>@style/Theme.EstacionamentoJBS</theme>
         </config>
       </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
       <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/dialog_excluir.xml">
         <config>
+          <theme>@style/Theme.AtividadeNisflei</theme>
           <theme>@style/Theme.EstacionamentoJBS</theme>
         </config>
       </layout>
@@ -40,12 +43,7 @@
           <theme>@style/Theme.EstacionamentoJBS</theme>
         </config>
       </layout>
-      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/item_carro.xml">
-        <config>
-          <theme>@style/Theme.EstacionamentoJBS</theme>
-        </config>
-      </layout>
-      <layout url="file://$PROJECT_DIR$/app/src/main/res/menu/bottom_nav_menu.xml">
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/placas.xml">
         <config>
           <theme>@style/Theme.EstacionamentoJBS</theme>
         </config>
@@ -82,6 +80,7 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[DeviceId(pluginId=PhysicalDevice, isTemplate=false, identifier=serial=e381f38d0000)]" />
   <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[DeviceId(pluginId=LocalEmulator, isTemplate=false, identifier=path=C:\Users\claramoreira-ieg\.android\avd\Pixel_9_Pro_API_35.avd)]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
@@ -119,8 +118,25 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="projeto_alterado" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Akira-1501&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/clarabartolini/SimuladoMobile.git&quot;,
+    &quot;accountId&quot;: &quot;fcbf220e-da1d-4ad2-9b52-b06be634e3d8&quot;
+  }
+}</component>
   <component name="KotlinScriptingSettings">
     <scriptDefinition className="org.jetbrains.kotlin.scripting.resolve.KotlinScriptDefinitionFromAnnotatedTemplate" definitionName="KotlinBuildScript">
       <order>2147483647</order>
@@ -153,6 +169,19 @@
     &quot;git-widget-placeholder&quot;: &quot;projeto__alterado&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/claramoreira-ieg/AndroidStudioProjects/SimuladoMobile2&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Android App.app.executor": "Run",
+    "Gradle.SimuladoMobile.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "com.codeium.enabled": "true",
+    "git-widget-placeholder": "6ad5119c",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/rafaeltakahashi-ieg/atividade nisflei/SimuladoMobile"
   }
 }</component>
   <component name="RecentsManager">
@@ -264,6 +293,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.SimuladoMobile" />
+        <item itemvalue="Gradle.SimuladoMobile" />
+        <item itemvalue="Gradle.SimuladoMobile" />
       </list>
     </recent_temporary>
   </component>
@@ -294,21 +325,25 @@
         <entry key="com.aula.estacionamentojbs">
           <value>
             <CheckInfo lastCheckTimestamp="1750022326580" />
+            <CheckInfo lastCheckTimestamp="1749568916539" />
           </value>
         </entry>
         <entry key="com.aula.estacionamentojbs.qa">
           <value>
             <CheckInfo lastCheckTimestamp="1750022326578" />
+            <CheckInfo lastCheckTimestamp="1749568916543" />
           </value>
         </entry>
         <entry key="com.aula.estacionamentojbs.qa.test">
           <value>
+            <CheckInfo lastCheckTimestamp="1749568916546" />
             <CheckInfo lastCheckTimestamp="1750022326579" />
           </value>
         </entry>
         <entry key="com.aula.estacionamentojbs.test">
           <value>
             <CheckInfo lastCheckTimestamp="1750022326582" />
+            <CheckInfo lastCheckTimestamp="1749568916550" />
           </value>
         </entry>
       </map>

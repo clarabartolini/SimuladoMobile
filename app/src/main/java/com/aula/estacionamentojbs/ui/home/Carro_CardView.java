@@ -24,8 +24,11 @@ import com.aula.estacionamentojbs.model.Carro;
 import com.aula.estacionamentojbs.ui.dialog.AdicionarDialog;
 import com.aula.estacionamentojbs.ui.login.UserViewModel;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
+import java.util.Locale;
 
 public class Carro_CardView extends Fragment {
 
@@ -58,6 +61,14 @@ public class Carro_CardView extends Fragment {
 
             @Override
             public void onRegistrarSaida(Carro carro, int position) {
+                String horaAtual = new SimpleDateFormat("HH:mm:ss", Locale.getDefault()).format(new Date());
+                carro.setHoraSaida(horaAtual);
+
+                // Atualiza no banco se necessário:
+                Database database = new Database();
+                database.atualizarSaida(carro, getContext());
+
+                adapterCarros.notifyItemChanged(position);
             }
         });
 
@@ -138,4 +149,6 @@ public class Carro_CardView extends Fragment {
         super.onDestroyView();
         binding = null;
     }
+
+
 }

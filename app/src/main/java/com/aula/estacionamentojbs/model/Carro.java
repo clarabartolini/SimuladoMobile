@@ -1,5 +1,9 @@
 package com.aula.estacionamentojbs.model;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Locale;
+
 public class Carro {
     private String proprietario;
     private String placa;
@@ -8,6 +12,7 @@ public class Carro {
     private String horaEntrada;
     private String horaSaida;
 
+    String horaAtual = new SimpleDateFormat("HH:mm:ss", Locale.getDefault()).format(new Date());
     public Carro(String proprietario, String placa, String veiculo, String cor, String horaEntrada, String horaSaida) {
         this.proprietario = proprietario;
         this.placa = placa;
@@ -17,6 +22,8 @@ public class Carro {
         this.horaSaida = horaSaida;
 
     }
+
+    public Carro (){}
 
 
     public String getProprietario() {

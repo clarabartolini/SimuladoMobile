@@ -23,13 +23,30 @@ public class Database {
 
     public Database() {
     }
-
-    public void adicionar(Carro argNota, Context c) {
-        // ABRIR DB
+    public void atualizarSaida(Carro carro, Context context) {
         FirebaseFirestore db = FirebaseFirestore.getInstance();
-        // INSERIR NOVA PLACA
-        db.collection("veiculo").document(String.valueOf(argNota.getPlaca())).set(argNota);
+        db.collection("veiculo").document(carro.getPlaca())
+                .update("horaSaida", carro.getHoraSaida());
     }
+    public void adicionar(Carro argNota, Context c) {
+        if (argNota.getPlaca() == null || argNota.getPlaca().trim().isEmpty()) {
+            Toast.makeText(c, "Erro: a placa está vazia!", Toast.LENGTH_SHORT).show();
+            return;
+        }
+
+        FirebaseFirestore db = FirebaseFirestore.getInstance();
+        db.collection("veiculo")
+                .document(argNota.getPlaca())
+                .set(argNota)
+                .addOnSuccessListener(unused ->
+                        Toast.makeText(c, "Veículo salvo com sucesso!", Toast.LENGTH_SHORT).show()
+                )
+                .addOnFailureListener(e ->
+                        Toast.makeText(c, "Erro ao salvar veículo: " + e.getMessage(), Toast.LENGTH_LONG).show()
+                );
+    }
+
+
     public void excluir(Carro agrnota, Context c) {
         FirebaseFirestore db = FirebaseFirestore.getInstance();
         db.collection("veiculo").document(String.valueOf(agrnota.getPlaca())).delete().addOnSuccessListener(new OnSuccessListener<Void>() {
@@ -40,28 +57,35 @@ public class Database {
         });
     }
 
-    public void listar(List<Carro> argLista, AdapterCarro agrAdapter, Context c){
-
-        // ABRIR DB
+    public void listar(List<Carro> argLista, AdapterCarro agrAdapter, Context c) {
         FirebaseFirestore database = FirebaseFirestore.getInstance();
 
-        // ATIVAR REAL TIME
         database.collection("veiculo").addSnapshotListener(new EventListener<QuerySnapshot>() {
             @Override
             public void onEvent(@Nullable QuerySnapshot value, @Nullable FirebaseFirestoreException error) {
                 if (error != null) {
-                    System.out.println("Deu RUIM..!!" + error.getMessage());
+                    Toast.makeText(c, "Erro ao acessar o banco: " + error.getMessage(), Toast.LENGTH_SHORT).show();
+                    return;
                 }
-                assert value != null;
-                argLista.clear();
 
+                if (value == null) {
+                    Toast.makeText(c, "Nenhum dado retornado do Firestore", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
+                argLista.clear();
                 for (DocumentSnapshot document : value.getDocuments()) {
                     Carro estacionamento = document.toObject(Carro.class);
-                    argLista.add(estacionamento);
+                    if (estacionamento != null) {
+                        argLista.add(estacionamento);
+                    }
                 }
                 agrAdapter.notifyDataSetChanged();
             }
         });
     }
+
+
 }
+
 

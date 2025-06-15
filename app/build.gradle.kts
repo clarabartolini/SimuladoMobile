@@ -49,7 +49,8 @@ android {
 }
 
 dependencies {
-
+    implementation ("com.google.firebase:firebase-bom:33.14.0")
+    implementation ("com.google.firebase:firebase-firestore")
     implementation(libs.appcompat)
     implementation(libs.material)
     implementation(libs.constraintlayout)
@@ -62,5 +63,4 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
-    implementation(platform("com.google.firebase:firebase-bom:33.14.0"))
 }
