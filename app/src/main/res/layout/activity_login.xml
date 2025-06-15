@@ -1,42 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/white"
-    android:gravity="center"
-    android:orientation="vertical"
-    android:padding="32dp">
+    android:padding="24dp">
 
-    <TextView
-        android:id="@+id/titulo"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="Faça seu login:"
-        android:textColor="#333"
-        android:textSize="24sp"
-        android:textStyle="bold" />
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:background="@drawable/bg_form_container"
+        android:padding="32dp"
+        android:elevation="4dp"
+        android:layout_gravity="center"
+        >
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/usernameLayout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:hint="Usuário"
-        app:boxBackgroundColor="@android:color/transparent"
-        app:boxBackgroundMode="outline"
-        app:boxCornerRadiusBottomEnd="15dp"
-        app:boxCornerRadiusBottomStart="15dp"
-        app:boxCornerRadiusTopEnd="15dp"
-        app:boxCornerRadiusTopStart="15dp"
-        app:boxStrokeColor="#1630BF">
+        <TextView
+            android:id="@+id/titulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Faça seu login"
+            android:textColor="#1A237E"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginBottom="32dp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/usernameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Usuário"
+            app:boxBackgroundMode="outline"
+            app:boxStrokeColor="#1A237E"
+            app:endIconMode="clear_text"
+            app:boxCornerRadiusTopStart="16dp"
+            app:boxCornerRadiusTopEnd="16dp"
+            app:boxCornerRadiusBottomStart="16dp"
+            app:boxCornerRadiusBottomEnd="16dp"
+            android:layout_marginBottom="20dp">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/username"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="text|textPersonName"
+            android:inputType="textPersonName"
             android:textColor="@android:color/black" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -44,15 +54,15 @@
         android:id="@+id/passwordLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
         android:hint="Senha"
-        app:boxBackgroundColor="@android:color/transparent"
         app:boxBackgroundMode="outline"
-        app:boxCornerRadiusBottomEnd="15dp"
-        app:boxCornerRadiusBottomStart="15dp"
-        app:boxCornerRadiusTopEnd="15dp"
-        app:boxCornerRadiusTopStart="15dp"
-        app:boxStrokeColor="#1630BF">
+        app:boxStrokeColor="#1A237E"
+        app:endIconMode="password_toggle"
+        app:boxCornerRadiusTopStart="16dp"
+        app:boxCornerRadiusTopEnd="16dp"
+        app:boxCornerRadiusBottomStart="16dp"
+        app:boxCornerRadiusBottomEnd="16dp"
+        android:layout_marginBottom="28dp">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/password"
@@ -62,40 +72,47 @@
             android:textColor="@android:color/black" />
     </com.google.android.material.textfield.TextInputLayout>
 
-    <LinearLayout
+    <Button
+        android:id="@+id/btnLoginNormal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:gravity="center_horizontal"
-        android:orientation="vertical">
+        android:backgroundTint="#3949AB"
+        android:text="Entrar Normal"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="12dp"
+        android:fontFamily="sans-serif-medium"
+        android:letterSpacing="0.05"
+        android:elevation="4dp"
+        android:stateListAnimator="@null"
+        android:background="@drawable/btn_rounded" />
 
-        <Button
-            android:id="@+id/btnLoginNormal"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:backgroundTint="?attr/colorSecondary"
-            android:text="Entrar Normal"
-            android:textAllCaps="false"
-            android:textColor="@android:color/white" />
+    <Button
+        android:id="@+id/btnLoginAdmin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#1A237E"
+        android:text="Entrar Área Restrita"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:fontFamily="sans-serif-medium"
+        android:letterSpacing="0.05"
+        android:elevation="4dp"
+        android:stateListAnimator="@null"
+        android:background="@drawable/btn_rounded" />
 
-        <Button
-            android:id="@+id/btnLoginAdmin"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:backgroundTint="?attr/colorPrimary"
-            android:text="Entrar Área Restrita"
-            android:textAllCaps="false"
-            android:textColor="@android:color/white" />
-    </LinearLayout>
 
     <TextView
         android:id="@+id/mensagemErro"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="20dp"
         android:gravity="center"
         android:text="Usuário ou senha inválidos"
-        android:textColor="#F44336"
-        android:visibility="gone" />
+        android:textColor="#D32F2F"
+        android:visibility="gone"
+        android:textSize="14sp" />
 
 </LinearLayout>
+
+    </ScrollView>

@@ -105,6 +105,9 @@ public class Carro_CardView extends Fragment {
         adapterCarros.notifyDataSetChanged();
     }
 
+    //como faço pra registrar o horário de saida quando clciar no botao
+
+
     private void abrirDialogAdicionar() {
         AdicionarDialog dialog = new AdicionarDialog();
         dialog.setProprietario(proprietario);
