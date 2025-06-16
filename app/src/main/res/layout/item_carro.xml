@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="8dp"
+    android:backgroundTint="@android:color/white">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/fundo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/proprietario"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Proprietário: "
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#333"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/placa"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Placa:"
+            android:textSize="15sp"
+            android:textColor="#555"
+            app:layout_constraintTop_toBottomOf="@id/proprietario"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:id="@+id/veiculo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Veículo:"
+            android:textSize="15sp"
+            android:textColor="#555"
+            app:layout_constraintTop_toBottomOf="@id/placa"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:id="@+id/cor"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Cor:"
+            android:textSize="15sp"
+            android:textColor="#555"
+            app:layout_constraintTop_toBottomOf="@id/veiculo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:id="@+id/entrada"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Horário de entrada:"
+            android:textSize="15sp"
+            android:textColor="#555"
+            app:layout_constraintTop_toBottomOf="@id/cor"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:id="@+id/saida"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Horário de saída:"
+            android:textSize="15sp"
+            android:textColor="#555"
+            app:layout_constraintTop_toBottomOf="@id/entrada"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp"/>
+
+        <Button
+            android:id="@+id/btnRegistrarSaida"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="#1630BF"
+            android:text="Registrar saída"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/saida" />
+
+        <Button
+            android:id="@+id/btnExcluirRegistro"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Excluir registro"
+            android:textAllCaps="false"
+            android:backgroundTint="#F44336"
+            android:textColor="@android:color/white"
+            app:layout_constraintTop_toBottomOf="@id/saida"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="24dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

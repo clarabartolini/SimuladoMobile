@@ -5,7 +5,7 @@
       <config />
     </shared>
     <layouts>
-      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_cards.xml">
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml">
         <config>
           <theme>@style/Theme.EstacionamentoJBS</theme>
         </config>
@@ -15,7 +15,30 @@
           <theme>@style/Theme.AtividadeNisflei</theme>
         </config>
       </layout>
-      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_splash.xml">
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_splash_screen.xml">
+        <config>
+          <theme>@style/Theme.EstacionamentoJBS</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/dialog_adicionar.xml">
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_cards.xml">
+        <config>
+          <theme>@style/Theme.EstacionamentoJBS</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/dialog_excluir.xml">
+        <config>
+          <theme>@style/Theme.AtividadeNisflei</theme>
+          <theme>@style/Theme.EstacionamentoJBS</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_home.xml">
+        <config>
+          <theme>@style/Theme.EstacionamentoJBS</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_perfil.xml">
         <config>
           <theme>@style/Theme.EstacionamentoJBS</theme>
         </config>
@@ -36,20 +59,9 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a96ade05-b8b6-45fc-8488-9ac7a8e71596" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/aula/estacionamentojbs/AdapterCarros.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/aula/estacionamentojbs/Cards.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/aula/estacionamentojbs/Database.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/aula/estacionamentojbs/Estacionamento.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/aula/estacionamentojbs/Splash.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/carros.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/gradient.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_cards.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_splash.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/placas.xml" afterDir="false" />
+    <list default="true" id="a96ade05-b8b6-45fc-8488-9ac7a8e71596" name="Changes" comment="Adicionando métodos do firebase nas classes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/navigation/mobile_navigation.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/navigation/mobile_navigation.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aula/estacionamentojbs/ui/home/Carro_CardView.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/aula/estacionamentojbs/ui/home/Carro_CardView.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,6 +71,7 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[DeviceId(pluginId=PhysicalDevice, isTemplate=false, identifier=serial=e381f38d0000)]" />
   <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[DeviceId(pluginId=LocalEmulator, isTemplate=false, identifier=path=C:\Users\claramoreira-ieg\.android\avd\Pixel_9_Pro_API_35.avd)]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
@@ -76,7 +89,12 @@
         </task>
         <projects_view>
           <tree_state>
-            <expand />
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Estacionamento JBS" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
             <select />
           </tree_state>
         </projects_view>
@@ -91,26 +109,59 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="projeto_alterado" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Akira-1501&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/clarabartolini/SimuladoMobile.git&quot;,
+    &quot;accountId&quot;: &quot;fcbf220e-da1d-4ad2-9b52-b06be634e3d8&quot;
+  }
+}</component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;clarabartolini&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/clarabartolini/SimuladoMobile.git&quot;,
+    &quot;accountId&quot;: &quot;467eac5a-96f5-49f8-9241-0af85c0d40c9&quot;
+  }
+}</component>
   <component name="KotlinScriptingSettings">
     <scriptDefinition className="org.jetbrains.kotlin.scripting.resolve.KotlinScriptDefinitionFromAnnotatedTemplate" definitionName="KotlinBuildScript">
       <order>2147483647</order>
     </scriptDefinition>
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
+    <option name="selectedTabId" value="_Designer_Tab" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
 }</component>
   <component name="ProjectId" id="2xxPItRkXcW6Ue8jaF1Ebuuho2C" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Android App.app.executor&quot;: &quot;Run&quot;,
     &quot;Gradle.SimuladoMobile.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
@@ -118,9 +169,22 @@
     &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
     &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
     &quot;com.codeium.enabled&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;projeto__alterado&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/claramoreira-ieg/AndroidStudioProjects/SimuladoMobile2/app/src/main/res/layout&quot;
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/claramoreira-ieg/AndroidStudioProjects/SimuladoMobile2&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Android App.app.executor": "Run",
+    "Gradle.SimuladoMobile.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "com.codeium.enabled": "true",
+    "git-widget-placeholder": "6ad5119c",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/rafaeltakahashi-ieg/atividade nisflei/SimuladoMobile"
   }
 }</component>
   <component name="RecentsManager">
@@ -232,6 +296,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.SimuladoMobile" />
+        <item itemvalue="Gradle.SimuladoMobile" />
+        <item itemvalue="Gradle.SimuladoMobile" />
       </list>
     </recent_temporary>
   </component>
@@ -244,7 +310,20 @@
       <option name="presentableId" value="Default" />
       <updated>1748876675761</updated>
     </task>
+    <task id="LOCAL-00001" summary="Adicionando métodos do firebase nas classes">
+      <option name="closed" value="true" />
+      <created>1750024555276</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1750024555276</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Adicionando métodos do firebase nas classes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adicionando métodos do firebase nas classes" />
   </component>
   <component name="play_dynamic_filters_status">
     <option name="appIdToCheckInfo">
@@ -261,22 +340,26 @@
         </entry>
         <entry key="com.aula.estacionamentojbs">
           <value>
-            <CheckInfo lastCheckTimestamp="1749465726636" />
+            <CheckInfo lastCheckTimestamp="1750022326580" />
+            <CheckInfo lastCheckTimestamp="1749568916539" />
           </value>
         </entry>
         <entry key="com.aula.estacionamentojbs.qa">
           <value>
-            <CheckInfo lastCheckTimestamp="1749465726635" />
+            <CheckInfo lastCheckTimestamp="1750022326578" />
+            <CheckInfo lastCheckTimestamp="1749568916543" />
           </value>
         </entry>
         <entry key="com.aula.estacionamentojbs.qa.test">
           <value>
-            <CheckInfo lastCheckTimestamp="1749465726651" />
+            <CheckInfo lastCheckTimestamp="1749568916546" />
+            <CheckInfo lastCheckTimestamp="1750022326579" />
           </value>
         </entry>
         <entry key="com.aula.estacionamentojbs.test">
           <value>
-            <CheckInfo lastCheckTimestamp="1749465726631" />
+            <CheckInfo lastCheckTimestamp="1750022326582" />
+            <CheckInfo lastCheckTimestamp="1749568916550" />
           </value>
         </entry>
       </map>
